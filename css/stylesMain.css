@@ -1,6 +1,14 @@
+/*
+COLORS:
+  yelloww: #ffc33d
+  bluee  : #49bbff
+  purplee: #5460cc
+*/
+
+
 body{
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size  : 16px;
 }
 /*----------------------HEADER--------------------*/
 #header-nav{
@@ -10,14 +18,14 @@ body{
   display: block;
 }
 #logo-img{
-  width: 80px;
+  width : 80px;
   height: 80px;
   margin: 10px 15px 10px 0;
 
 }
 .navbar-brand h1{
-  color: #777;
-  font-size: 3em;
+  color      : #777;
+  font-size  : 3em;
   line-height: 0.5;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -29,54 +37,112 @@ body{
 }
 #nav-list a{
   text-align: center;
-  font-size: 1.3em;
-  border: 0px solid #b9b9b9;
+  font-size : 1.3em;
+  border    : 0px solid #b9b9b9;
 }
 #nav-list a:hover{
+  color           : #777;
   background-color: #e7e7e7;
-  border-radius: 30px;
-
+  border-radius   : 30px;
 }
+#nav-list a:visited{
+  color: #777;
+}
+
+/***************************************/
+
+#nav-list li:nth-child(1) a:hover {
+  background: #ffc33d;
+}
+#nav-list li:nth-child(2) a:hover  {
+  background: #49bbff;
+}
+#nav-list li:nth-child(3) a:hover{
+  background: #5460cc;
+}
+
+
+/***************************************/
+
 .navbar-header button.navbar-toggle{
-  clear: both;
+  clear     : both;
   margin-top: -30px;
 }
 /*----------------------JUMBOTRON--------------------*/
 #sec-jum{
-  margin-bottom: 0;
-  height: 580px;
-  background: url('../imgs/gif-background.gif') no-repeat center fixed;
+  margin-bottom  : 0;
+  height         : 580px;
+  background     : url('../imgs/gif-background.gif') no-repeat center fixed;
   background-size: cover;
 }
 #filter-des{
   padding-top: 140px;
-  margin-top: -48px;
-  width: 100%;
-  height: 580px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  margin-top : -48px;
+  width      : 100%;
+  height     : 580px;
+  background : rgba(255, 255, 255, 0.2);
+  color      : #fff;
 }
 #sec-des h2{
   font-weight: 300;
-  font-size: 5em;
+  font-size  : 5em;
 }
 #sec-des p{
-  font-size: 2em;
+  font-size : 2em;
   margin-top: 200px;
 }
 #sec-des a, #sec-des a:hover, #sec-des a:focus, #sec-des a:active{
   text-decoration: none;
-  color: #fff;
+  color          : #fff;
 }
-/*----------------------MAIN SECTION--------------------*/
-#section-main{
-  height: 500px;
+
+/*----------------------.section-videos--------------------*/
+#section-videos{
+  height          : 500px;
   background-color: #b9b9b9;
 }
-#section-main h2{
-  color: #777;
+#section-videos h2{
+  color     : #777;
   margin-top: 5em;
 }
+/*----------------------.section-photo--------------------*/
+#section-photo{
+  height          : 400px;
+  background-color: #b9b9b9;
+}
+#section-photo h2{
+  color     : #777;
+  margin-top: 5em;
+}
+#section-photo{
+  border-top: 1px solid #000;
+}
+/*----------------------.section-about--------------------*/
+#section-about{
+  height          : 400px;
+  background-color: #b9b9b9;
+}
+#section-about h2{
+  color     : #777;
+  margin-top: 5em;
+}
+#section-about{
+  border-top: 1px solid #000;
+}
+/*----------------------.section-footer--------------------*/
+#section-footer{
+  height          : 600px;
+  background-color: #b9b9b9;
+}
+#section-footer h2{
+  color     : #777;
+  margin-top: 5em;
+}
+#section-footer{
+  border-top: 1px solid #000;
+}
+
+
 
 
 
@@ -130,13 +196,16 @@ body{
     color: #fff;
     border-radius: 0px;
   }
+  #collapsable-nav a:visited{
+    display: none;
+  }
   #collapsable-nav{
     background-color: rgba(185, 185, 185, 0.46);
   }
 
   /*END HEADER*/
 
-  /*JUMBOTRON*/
+  /*----------------------JUMBOTRON-------------------*/
   #filter-des{
     margin-top: -30px;
   }
@@ -147,3 +216,22 @@ body{
     font-size: 1.5em;
   }
 }
+
+
+/*----------------------TOP NAVIGATION BUTTON--------------------*/
+#top-button.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 10px; /* padding from the left side of the window */
+}
+#top-button.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 20px; /* height of link element */
+    right: 10px; /* padding from the left side of the window */
+}
+#top-button a{
+  color: #404040;
+  font-size: 2.5em;
+  margin-right: 20px;
+}
+/*----------------------END TOP NAVIGATION BUTTON--------------------*/

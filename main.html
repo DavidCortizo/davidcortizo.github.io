@@ -13,7 +13,7 @@
 
   <body>
     <!-- Header -->
-    <header>
+    <header id="top">
       <nav id="header-nav" class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -37,9 +37,9 @@
           <!--#navlist-->
           <div class="collapse navbar-collapse" id="collapsable-nav">
             <ul class="nav navbar-nav navbar-right" id="nav-list">
-              <li><a href="#">videos</a></li>
-              <li><a href="photpgraphy.html">photography</a></li>
-              <li><a href="#">about</a></li>
+              <li><a class="a" href="#section-videos" onclick="$('html,body').animate({scrollTop:682},'slow');return false;">videos</a></li>
+              <li><a class="a" href="#section-photo" onclick="$('html,body').animate({scrollTop:1182},'slow');return false;">photography</a></li>
+              <li><a class="a" href="#section-about"  onclick="$('html,body').animate({scrollTop:1582},'slow');return false;">about</a></li>
             </ul><!--#navlist-->
           </div><!--.collapse #collapsable-nav-->
         </div><!--.container-->
@@ -51,16 +51,38 @@
       <div class="" id="filter-des">
         <div id="sec-des">
           <h2 class="text-center">Andrés Caldera</h2>
-          <a href="#section-main"><p class="text-center">Scroll down <br> <i class="fa fa-angle-double-down" aria-hidden="true"></i></p></a>
+          <a href="#section-videos" onclick="$('html,body').animate({scrollTop:682},'slow');return false;"><p class="text-center">Scroll down <br> <i class="fa fa-angle-double-down" aria-hidden="true"></i></p></a>
         </div>
       </div>
 
     </section>
 
-    <!-- Jumbotron -->
-    <section class="container-fluid" id="section-main">
-      <h2 class="text-center text-muted">Main Section</h2>
+    <!-- .section-videos -->
+    <section class="container-fluid" id="section-videos">
+      <h2 class="text-center text-muted">Videos</h2>
     </section>
+
+    <!-- .section-photo -->
+    <section class="container-fluid" id="section-photo">
+      <h2 class="text-center text-muted">Photography</h2>
+    </section>
+
+    <!-- .section-about -->
+    <section class="container-fluid" id="section-about">
+      <h2 class="text-center text-muted">About</h2>
+    </section>
+
+    <!-- .section-footer -->
+    <section class="container-fluid" id="section-footer">
+      <h2 class="text-center text-muted">footer</h2>
+    </section>
+
+
+    <!-- Top Navigation -->
+    <span id="top-button" class="hidden">
+      <a href="#top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+    </span>
+
 
     <!-- JavaScript -->
     <script src="misc/jQuery/jquery-3.1.0.js"></script>
