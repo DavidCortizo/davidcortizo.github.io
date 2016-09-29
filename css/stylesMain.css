@@ -1,0 +1,150 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+/*----------------------HEADER--------------------*/
+#header-nav{
+  margin-bottom: 0;
+}
+#navbar-header a{
+  display: block;
+}
+#logo-img{
+  width: 80px;
+  height: 80px;
+  margin: 10px 15px 10px 0;
+  box-shadow: 1px 1px 1px #000
+}
+.navbar-brand h1{
+  color: #777;
+  font-size: 3em;
+  line-height: 0.5;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+#nav-list a{
+  text-align: center;
+  font-size: 1.3em;
+  border: 0px solid #b9b9b9;
+}
+#nav-list a:hover{
+  background-color: #e7e7e7;
+  border: 1px solid #b9b9b9;
+  border-radius: 30px;
+
+}
+.navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -30px;
+}
+/*----------------------JUMBOTRON--------------------*/
+#sec-jum{
+  margin-bottom: 0;
+  height: 580px;
+  background: url('../imgs/gif-background.gif') no-repeat center fixed;
+  background-size: cover;
+}
+#filter-des{
+  padding-top: 140px;
+  margin-top: -48px;
+  width: 100%;
+  height: 580px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+#sec-des h2{
+  font-weight: 300;
+  font-size: 5em;
+}
+#sec-des p{
+  font-size: 2em;
+  margin-top: 200px;
+}
+#sec-des a, #sec-des a:hover, #sec-des a:focus, #sec-des a:active{
+  text-decoration: none;
+  color: #fff;
+}
+/*----------------------MAIN SECTION--------------------*/
+#section-main{
+  height: 500px;
+  background-color: #b9b9b9;
+}
+#section-main h2{
+  color: #777;
+  margin-top: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------MEDIA QUERIS--------------------*/
+/*----------------------LARGE DEVICES--------------------*/
+@media (min-width: 1200px){
+
+}
+
+/*----------------------MEDIUM DEVICES--------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/*----------------------SMALL DEVICES--------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/*----------------------EXTRA SMALL DEVICES--------------------*/
+@media (max-width: 767px) {
+  #logo-img{
+    margin-left: 30px;
+  }
+  #btn-navbar{
+    margin: 20px 30px;
+  }
+  .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: #fff;
+  }
+  header buttom:active{
+    background-color: rgba(54, 103, 125, 0.34);
+  }
+  #nav-list{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #nav-list a{
+    text-align: center;
+    font-size: 1.3em;
+    border: 0px solid #fff;
+    border-radius: 0px;
+  }
+  #nav-list a:hover, #nav-list a:focus{
+    background-color: rgba(62, 62, 62, 0.58);
+    color: #fff;
+    border-radius: 0px;
+  }
+  #collapsable-nav{
+    background-color: rgba(185, 185, 185, 0.46);
+  }
+
+  /*END HEADER*/
+
+  /*JUMBOTRON*/
+  #filter-des{
+    margin-top: -30px;
+  }
+  #sec-des h2{
+    font-size: 10vw;
+  }
+  #sec-des p{
+    font-size: 1.5em;
+  }
+}
