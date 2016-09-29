@@ -33,7 +33,7 @@ body{
 }
 
 #nav-list{
-  margin-top: 30px;
+  margin-top: 24px;
 }
 #nav-list a{
   text-align: center;
@@ -89,7 +89,7 @@ body{
 }
 #sec-des p{
   font-size : 2em;
-  margin-top: 200px;
+  margin-top: 160px;
 }
 #sec-des a, #sec-des a:hover, #sec-des a:focus, #sec-des a:active{
   text-decoration: none;
