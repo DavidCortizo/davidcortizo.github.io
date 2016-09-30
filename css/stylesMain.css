@@ -17,6 +17,7 @@ body{
 #header-nav{
   margin-bottom: 0;
   border: 0;
+  background-color: rgba(34, 34, 34, 0.88);
 }
 .navbar-inverse{
 background-color: rgba(34, 34, 34, 0.88);
@@ -43,22 +44,26 @@ background-color: rgba(34, 34, 34, 0.88);
   margin-top: 15px;
 }
 #nav-list a{
+  color: #9d9d9d;
   text-align: center;
   font-size : 1.1em;
-  border    : 0px solid #b9b9b9;
+  /*border    : 0px solid #b9b9b9;*/
 }
 #nav-list a:hover{
-  color           : #777;
-  background-color: #e7e7e7;
+  color           : #ffc33d;
   border-radius   : 30px;
 }
 #nav-list a:visited{
-  color: #777;
+  color: #5460cc;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #9d9d9d;
+    background-color: transparent;
 }
 
 /***************************************/
 
-#nav-list li:nth-child(1) a:hover {
+/*#nav-list li:nth-child(1) a:hover {
   background: #ffc33d;
 }
 #nav-list li:nth-child(2) a:hover  {
@@ -66,7 +71,7 @@ background-color: rgba(34, 34, 34, 0.88);
 }
 #nav-list li:nth-child(3) a:hover{
   background: #5460cc;
-}
+}*/
 
 
 /***************************************/
@@ -246,6 +251,6 @@ background-color: rgba(34, 34, 34, 0.88);
 #top-button a{
   color: #328292;
   font-size: 2.5em;
-  margin-right: 20px;
+  margin-right: 16px;
 }
 /*----------------------END TOP NAVIGATION BUTTON--------------------*/
