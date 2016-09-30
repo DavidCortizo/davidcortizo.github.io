@@ -9,35 +9,37 @@ COLORS:
 body{
   font-family: 'Raleway', sans-serif;
   font-size  : 16px;
+  padding-top: 80px;
 }
 /*----------------------HEADER--------------------*/
 #header-nav{
   margin-bottom: 0;
+  border: 0;
 }
 #navbar-header a{
   display: block;
 }
 #logo-img{
-  width : 80px;
-  height: 80px;
+  width : 60px;
+  height: 60px;
   margin: 10px 15px 10px 0;
 
 }
 .navbar-brand h1{
   color      : #777;
-  font-size  : 3em;
-  line-height: 0.5;
+  font-size  : 2em;
+  line-height: 0.2;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 
 #nav-list{
-  margin-top: 24px;
+  margin-top: 15px;
 }
 #nav-list a{
   text-align: center;
-  font-size : 1.3em;
+  font-size : 1.1em;
   border    : 0px solid #b9b9b9;
 }
 #nav-list a:hover{
@@ -68,28 +70,29 @@ body{
   clear     : both;
   margin-top: -30px;
 }
-/*----------------------JUMBOTRON--------------------*/
+/*----------------------.sec-jum--------------------*/
 #sec-jum{
   margin-bottom  : 0;
-  height         : 580px;
+  height         : 520px;
   background     : url('../imgs/gif-background.gif') no-repeat center fixed;
   background-size: cover;
+  clear: both;
 }
 #filter-des{
   padding-top: 160px;
   margin-top : -48px;
   width      : 100%;
-  height     : 580px;
+  height     : 520px;
   background : rgba(255, 255, 255, 0.2);
   color      : #fff;
 }
 #sec-des h2{
   font-weight: 300;
-  font-size  : 5em;
+  font-size  : 4em;
 }
 #sec-des p{
   font-size : 2em;
-  margin-top: 160px;
+  margin-top: 140px;
 }
 #sec-des a, #sec-des a:hover, #sec-des a:focus, #sec-des a:active{
   text-decoration: none;
@@ -131,12 +134,12 @@ body{
 }
 /*----------------------.section-footer--------------------*/
 #section-footer{
-  height          : 600px;
+  height          : 300px;
   background-color: #b9b9b9;
 }
 #section-footer h2{
   color     : #777;
-  margin-top: 5em;
+  margin-top: 4em;
 }
 #section-footer{
   border-top: 1px solid #000;
@@ -153,8 +156,14 @@ body{
 
 
 
-
 /*----------------------MEDIA QUERIS--------------------*/
+/*----------------------EXTRA LARGE DEVICES--------------------*/
+@media (min-width: 1327px) {
+  #header-container{
+    width: auto;
+    margin: 0 87px;
+  }
+}
 /*----------------------LARGE DEVICES--------------------*/
 @media (min-width: 1200px){
 

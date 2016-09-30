@@ -14,8 +14,8 @@
   <body>
     <!-- Header -->
     <header id="top">
-      <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container" id="header-container">
           <div class="navbar-header">
             <a href="main.html" class="navbar-left">
               <img id="logo-img" src="imgs/logoFace2.png" alt="Logo image" class="img-circle">
@@ -37,45 +37,49 @@
           <!--#navlist-->
           <div class="collapse navbar-collapse" id="collapsable-nav">
             <ul class="nav navbar-nav navbar-right" id="nav-list">
-              <li><a class="a" href="#section-videos" onclick="$('html,body').animate({scrollTop:682},'slow');return false;">videos</a></li>
-              <li><a class="a" href="#section-photo" onclick="$('html,body').animate({scrollTop:1182},'slow');return false;">photography</a></li>
-              <li><a class="a" href="#section-about"  onclick="$('html,body').animate({scrollTop:1582},'slow');return false;">about</a></li>
+              <li><a class="a" href="#section-videos" onclick="$('html,body').animate({scrollTop:520},'slow');return false;">videos</a></li>
+              <li><a class="a" href="#section-photo" onclick="$('html,body').animate({scrollTop:1020},'slow');return false;">photography</a></li>
+              <li><a class="a" href="#section-about"  onclick="$('html,body').animate({scrollTop:1420},'slow');return false;">about</a></li>
             </ul><!--#navlist-->
           </div><!--.collapse #collapsable-nav-->
         </div><!--.container-->
       </nav>
     </header>
 
-    <!-- Jumbotron -->
+    <!-- .sec-jum -->
     <section class="jumbotron" id="sec-jum">
       <div class="" id="filter-des">
         <div id="sec-des">
-          <h2 class="text-center">Andrés Caldera</h2>
-          <a href="#section-videos" onclick="$('html,body').animate({scrollTop:682},'slow');return false;"><p class="text-center"><br> <i class="fa fa-angle-double-down" aria-hidden="true"></i></p></a>
+          <a href="#section-about" onclick="$('html,body').animate({scrollTop:1582},'slow');return false;"><h2 class="text-center">Andrés Caldera</h2></a>
+          <a href="#section-videos" onclick="$('html,body').animate({scrollTop:520},'slow');return false;"><p class="text-center"><br> <i class="fa fa-angle-double-down" aria-hidden="true"></i></p></a>
         </div>
       </div>
 
     </section>
 
     <!-- .section-videos -->
-    <section class="container-fluid" id="section-videos">
+    <section class="container" id="section-videos">
       <h2 class="text-center text-muted">Videos</h2>
     </section>
 
     <!-- .section-photo -->
-    <section class="container-fluid" id="section-photo">
+    <section class="container" id="section-photo">
       <h2 class="text-center text-muted">Photography</h2>
     </section>
 
     <!-- .section-about -->
-    <section class="container-fluid" id="section-about">
+    <section class="container" id="section-about">
       <h2 class="text-center text-muted">About</h2>
     </section>
 
     <!-- .section-footer -->
-    <section class="container-fluid" id="section-footer">
-      <h2 class="text-center text-muted">footer</h2>
-    </section>
+    <footer class="container-fluid" id="section-footer">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center text-muted">footer</h2>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- Top Navigation -->
