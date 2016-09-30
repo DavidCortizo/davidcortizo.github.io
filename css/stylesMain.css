@@ -1,13 +1,15 @@
 /*
 COLORS:
-  yelloww: #ffc33d
-  bluee  : #49bbff
-  purplee: #5460cc
+  yelloww:#ffc33d
+  bluee  :#49bbff
+  purplee:#5460cc
+  greenn :#328292
+          #b9b9b9
 */
 
 
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size  : 16px;
   padding-top: 80px;
 }
@@ -15,6 +17,9 @@ body{
 #header-nav{
   margin-bottom: 0;
   border: 0;
+}
+.navbar-inverse{
+background-color: rgba(34, 34, 34, 0.88);
 }
 #navbar-header a{
   display: block;
@@ -70,72 +75,72 @@ body{
   clear     : both;
   margin-top: -30px;
 }
-/*----------------------.sec-jum--------------------*/
-#sec-jum{
+/*----------------------.sec-banner--------------------*/
+#sec-banner{
   margin-bottom  : 0;
-  height         : 520px;
+  height         : 170px;
   background     : url('../imgs/gif-background.gif') no-repeat center fixed;
   background-size: cover;
   clear: both;
+  margin-bottom: 50px;
+  border-radius: 2px;
 }
-#filter-des{
-  padding-top: 160px;
-  margin-top : -48px;
-  width      : 100%;
-  height     : 520px;
-  background : rgba(255, 255, 255, 0.2);
-  color      : #fff;
+/********************************************************************/
+
+/*----------------------#main-section--------------------*/
+.sec-to-left{
+  padding-left: 0;
 }
-#sec-des h2{
-  font-weight: 300;
-  font-size  : 4em;
+.sec-to-right{
+  padding-right: 0;
 }
-#sec-des p{
-  font-size : 2em;
-  margin-top: 140px;
+#main-section{
+  margin-bottom: 50px;
+  border: 0;
+  border-radius: 2px;
 }
-#sec-des a, #sec-des a:hover, #sec-des a:focus, #sec-des a:active{
-  text-decoration: none;
-  color          : #fff;
+/*----------------------#section-phi--------------------*/
+#section-phi{
+  height: 500px;
+  background-color: #b9b9b9;
+  border-radius: 2px;
+}
+/*----------------------#section-skies--------------------*/
+#section-skies{
+  height: 300px;
+  background-color: #b9b9b9;
+  border-radius: 2px;
 }
 
-/*----------------------.section-videos--------------------*/
-#section-videos{
-  height          : 500px;
+/********************************************************************/
+
+/*----------------------#second-section--------------------*/
+#second-section{
+  margin-bottom: 50px;
+  border: 0;
+  border-radius: 2px;
+}
+/*----------------------#section-contact--------------------*/
+#section-contact{
+  height: 400px;
   background-color: #b9b9b9;
+  border-radius: 2px;
 }
-#section-videos h2{
-  color     : #777;
-  margin-top: 5em;
-}
-/*----------------------.section-photo--------------------*/
-#section-photo{
-  height          : 400px;
+/*----------------------#section-ext--------------------*/
+#section-ext{
+  height: 600px;
   background-color: #b9b9b9;
+  border-radius: 2px;
 }
-#section-photo h2{
-  color     : #777;
-  margin-top: 5em;
-}
-#section-photo{
-  border-top: 1px solid #000;
-}
-/*----------------------.section-about--------------------*/
-#section-about{
-  height          : 400px;
-  background-color: #b9b9b9;
-}
-#section-about h2{
-  color     : #777;
-  margin-top: 5em;
-}
-#section-about{
-  border-top: 1px solid #000;
-}
+
+
+/****************************************************************/
+
 /*----------------------.section-footer--------------------*/
 #section-footer{
   height          : 300px;
   background-color: #b9b9b9;
+  background-color: rgba(34, 34, 34, 0.88);
 }
 #section-footer h2{
   color     : #777;
@@ -239,7 +244,7 @@ body{
     right: 10px; /* padding from the left side of the window */
 }
 #top-button a{
-  color: #404040;
+  color: #328292;
   font-size: 2.5em;
   margin-right: 20px;
 }
