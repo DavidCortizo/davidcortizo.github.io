@@ -213,12 +213,15 @@ body{
 
 /*----------------------MEDIUM DEVICES--------------------*/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+  #sec-banner{
+    background-position: 0 -40px;
+  }
 }
 /*----------------------SMALL DEVICES--------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
-  #top-button span{
-
+  #sec-banner{
+    height: 190px;
+    background-position: 0 0;
   }
 }
 /*----------------------EXTRA SMALL DEVICES--------------------*/
@@ -255,6 +258,11 @@ body{
   }
   #collapsable-nav{
     background-color: rgba(185, 185, 185, 0.46);
+  }
+
+  #sec-banner{
+    height: 190px;
+    background-position: 0 0;
   }
 
   #section--ext{
