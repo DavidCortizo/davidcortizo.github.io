@@ -117,6 +117,7 @@ body{
   margin-bottom  : 0;
   height         : 170px;
   background     : url('../imgs/panoramic-banner.jpg') no-repeat center;
+  background-position: 0 -150px;
   background-size: cover;
   clear: both;
   margin-top: 30px;
