@@ -3,10 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Andrés Caldera</title>
+    <!--Import Google Icon Font-->
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400" rel="stylesheet">
+     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-deep_orange.min.css" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MDbootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" media="screen"> -->
+
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400" rel="stylesheet">
+
     <link rel="stylesheet" href="css/stylesMain.css">
   </head>
 
@@ -14,7 +24,7 @@
   <body>
     <!-- Header -->
     <header id="top">
-      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top mdl-shadow--8dp">
         <div class="container" id="header-container">
           <div class="navbar-header">
             <a href="main.html" class="navbar-left">
@@ -47,41 +57,52 @@
     </header>
 
     <!-- #sec-banner -->
-    <section class="container" id="sec-banner">
-
+    <section class="container" >
+      <div class="row" >
+        <div class="col-md-12 mdl-shadow--2dp" id="sec-banner"></div>
+      </div>
     </section>
 
-<!-- #main-section -->
-    <main class="container" id="main-section">
-      <div class="row">
+<!-- **************************#main-section************************* -->
+    <section class="container" id="main-section">
+      <div class="row margin-botton30">
         <!-- #section-phi -->
-        <div class="col-md-6 sec-to-left">
-          <div class="col-md-12" id="section-phi">
-            <h2 class="text-center text-muted">la philharmonique </h2>
+        <div class="col-md-6 col-sm-6 ">
+          <div class="row card-transition row-m0 card-conf mdl-shadow--2dp card-transition" onmouseover="cardHoverIn(this);" onmouseleave="cardHoverOut(this);">
+            <div class="col-md-12" id="section-phi">
+              <h2 class="text-center text-muted">la philharmonique </h2>
+            </div>
           </div>
         </div>
         <!-- #section-skies -->
-        <div class="col-md-6 sec-to-right">
-          <div class="col-md-12" id="section-skies">
-            <h2 class="text-center text-muted">painted skies</h2>
+        <div class="col-md-6 col-sm-6 ">
+          <div class="row card-transition row-m0 card-conf mdl-shadow--2dp card-transition" onmouseover="cardHoverIn(this);" onmouseleave="cardHoverOut(this);">
+            <div class="col-md-12" id="section-skies">
+              <h2 class="text-center text-muted">painted skies</h2>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    <!-- </section> -->
 
-<!-- #second-section -->
-    <section class="container" id="second-section">
+    <!--  onmouseover="cardHoverIn(this);" onmouseleave="cardHoverOut(this);" -->
+
+    <!-- <section class="container" id="second-section"> -->
       <div class="row">
         <!-- #section-contact -->
-        <div class="col-md-6 sec-to-left">
-          <div class="col-md-12" id="section-contact">
-            <h2 class="text-center text-muted">contact</h2>
+        <div class="col-md-6 col-sm-6 ">
+          <div class="row card-transition row-m0 card-conf mdl-shadow--2dp card-transition" onmouseover="cardHoverIn(this);" onmouseleave="cardHoverOut(this);">
+            <div class="col-md-12" id="section-contact">
+              <h2 class="text-center text-muted">contact</h2>
+            </div>
           </div>
         </div>
         <!-- #section-ext -->
-        <div class="col-md-6 sec-to-right">
-          <div class="col-md-12" id="section-ext">
-            <h2 class="text-center text-muted"> extreme tourism</h2>
+        <div class="col-md-6 col-sm-6 " id="section--ext">
+          <div class="row card-transition row-m0 card-conf mdl-shadow--2dp card-transition" onmouseover="cardHoverIn(this);" onmouseleave="cardHoverOut(this);">
+            <div class="col-md-12" id="section-ext">
+              <h2 class="text-center text-muted"> extreme tourism</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -91,7 +112,7 @@
     <!-- #section-footer -->
     <footer class="container-fluid" id="section-footer">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mdl-shadow--2dp card-transition">
           <h2 class="text-center text-muted">footer</h2>
         </div>
       </div>
@@ -99,15 +120,29 @@
 
 
     <!-- Top Navigation -->
-    <span id="top-button" class="hidden">
-      <a href="#top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+    <span id="top-button" class="hidden btn-transition" >
+      <a href="#top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-shadow--4dp" id="btn-up">
+          <i class="material-icons">keyboard_arrow_up</i>
+        </button>
+      </a>
     </span>
 
 
-    <!-- JavaScript -->
-    <script src="misc/jQuery/jquery-3.1.0.js"></script>
+    <!--***************** JavaScript ****************-->
+    <!-- jquery -->
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <!-- google mdl -->
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+    <!-- MDBootstrap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script> -->
+
+    <!-- bootstrap -->
     <script src="misc/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- fontawesome -->
     <script src="https://use.fontawesome.com/373f426192.js"></script>
+
     <script src="js/script.js"></script>
 
   </body>
