@@ -116,7 +116,7 @@ body{
 #sec-banner{
   margin-bottom  : 0;
   height         : 170px;
-  background     : url('../imgs/gif-background.gif') no-repeat center fixed;
+  background     : url('../imgs/panoramic-banner.jpg') no-repeat center;
   background-size: cover;
   clear: both;
   margin-top: 30px;
@@ -212,10 +212,13 @@ body{
 
 /*----------------------MEDIUM DEVICES--------------------*/
 @media (min-width: 992px) and (max-width: 1199px) {
+
 }
 /*----------------------SMALL DEVICES--------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
+  #top-button span{
 
+  }
 }
 /*----------------------EXTRA SMALL DEVICES--------------------*/
 @media (max-width: 767px) {
@@ -253,6 +256,13 @@ body{
     background-color: rgba(185, 185, 185, 0.46);
   }
 
+  #section--ext{
+    margin-top: 0;
+  }
+  #section-phi-parent, #section-contact-parent {
+    margin-bottom: 30px;
+  }
+
   /*END HEADER*/
 
   /*----------------------JUMBOTRON-------------------*/
@@ -265,4 +275,6 @@ body{
   #sec-des p{
     font-size: 1.5em;
   }
+
+
 }

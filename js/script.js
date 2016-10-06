@@ -40,3 +40,8 @@ function cardHoverOut(element){
     $("#top-button").addClass("btn-translate");
   }
   // button navigation
+
+  // if ( ($(window).width() < 768) ) {
+  //   $("")mdl-button--mini-fab
+  // }
+  //
