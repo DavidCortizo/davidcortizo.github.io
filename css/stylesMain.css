@@ -115,9 +115,9 @@ body{
 /*----------------------.sec-banner--------------------*/
 #sec-banner{
   margin-bottom  : 0;
-  height         : 410px;
+  height         : 210px;
   background     : url('../imgs/panoramic-banner.jpg') no-repeat center;
-  background-position: 0 -10px;
+  background-position: 0 -90px;
   background-size: cover;
   clear: both;
   margin-top: 0px;
@@ -129,7 +129,7 @@ body{
 
 /*----------------------#main-section--------------------*/
 .card-hover{
-  transform: scale(1.02, 1.02);
+  transform: scale(1.05, 1.05);
 }
 .card-transition{
   transition: all .15s ease-in .01s;
