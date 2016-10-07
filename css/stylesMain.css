@@ -5,11 +5,19 @@ COLORS:
   purplee:#5460cc
   greenn :#328292
           #b9b9b9
+
+
+  Verde   : #90DEC8
+  Rojo    : #CF7E6B
+  AZUL    : #2B436B
+  AMARILLO: #F5BE46
+  BLANCO  : #FAFAFA
 */
 
 
 body{
-  font-family: 'Dosis', sans-serif;
+  /*font-family: 'Dosis', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   font-size  : 16px;
   padding-top: 80px;
 }
@@ -33,6 +41,7 @@ body{
   color      : #777;
   font-size  : 2em;
   line-height: 0;
+  font-weight: 300;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -90,7 +99,7 @@ body{
   margin-right: 10px;
 }
 #top-button button{
-  background-color: rgb(255,110,64);
+  background-color: #CF7E6B;
 }
 .btn-transition{
   transition: all .15s ease-in .01s;
@@ -128,12 +137,13 @@ body{
 /********************************************************************/
 
 /*----------------------#main-section--------------------*/
-.card-hover{
-  transform: scale(1.05, 1.05);
-}
+/*.card-hover{
+  transform: scale(1.01, 1.01);
+}*/
 .card-transition{
   transition: all .15s ease-in .01s;
 }
+
 .margin-botton30{
   margin-bottom: 30px;
 }
@@ -149,10 +159,39 @@ body{
   border: 0;
   border-radius: 2px;
 }
+.mdl-card{
+  width: 100%;
+}
+.mdl-card__supporting-text{
+  font-size: 2rem;
+  line-height: 24px;
+}
 /*----------------------#section-phi--------------------*/
+#section-phi-parent{
+  background-color: #fff;
+}
 #section-phi{
-  height: 500px;
+  height: 480px;
   border-radius: 2px;
+  padding: 0;
+}
+#section-phi-actions-button{
+  margin-top: 20px;
+}
+#section-phi button{
+  background-color: #fff;
+}
+#section-phi button:hover{
+  background-color: #90DEC8;
+
+}
+#section-phi button>a:hover{
+    color: #fafafa;
+}
+#section-phi button a{
+  color: rgba(0,0,0,.54);
+  font-weight: bold;
+
 }
 /*----------------------#section-skies--------------------*/
 #section-skies{
@@ -175,7 +214,7 @@ body{
 }
 /*----------------------#section-ext--------------------*/
 #section--ext{
-  margin-top: -200px;
+  margin-top: -180px;
 }
 #section-ext{
   height: 600px;
