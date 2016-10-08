@@ -5,27 +5,63 @@ COLORS:
   purplee:#5460cc
   greenn :#328292
           #b9b9b9
+          #efefef
 
 
-  Verde   : #90DEC8
-  Rojo    : #CF7E6B
-  AZUL    : #2B436B
-  AMARILLO: #F5BE46
-  BLANCO  : #FAFAFA
+  Verde   : #90dec8
+  Rojo    : #cf7e6b
+  AZUL    : #2b436b
+  AMARILLO: #f5be46
+  BLANCO  : #fafafa
 */
 
-
+/*----------------------global--------------------*/
 body{
   /*font-family: 'Dosis', sans-serif;*/
   font-family: 'Roboto', sans-serif;
   font-size  : 16px;
   padding-top: 80px;
+  background-color: #efefef;
 }
+.mdl-card{
+  width: 100%;
+}
+.mdl-card__supporting-text{
+  font-size: 2rem;
+  line-height: 24px;
+}
+.card-hover{
+  /*-webkit-transform: scale(1.01, 1.01);*/
+  -webkit-font-smoothing: antialiased;
+}
+.card-transition{
+  transition: all .15s ease-in .01s;
+}
+
+.margin-botton30{
+  margin-bottom: 30px;
+}
+.card-conf{
+  background-color: #fafafa;;
+}
+.row-m0{
+  margin: 0;
+}
+.supporting-text{
+  font-size  : 2rem;
+  line-height: 24px;
+  color      : rgba(0,0,0,.54);
+  padding    : 15px;
+  overflow   : hidden;
+  width: 90%;
+}
+
+
 /*----------------------HEADER--------------------*/
 #header-nav{
   margin-bottom: 0;
   border: 0;
-  background-color: rgba(34, 34, 34, 1);
+  background-color: #328292;
 }
 
 #navbar-header a{
@@ -38,9 +74,9 @@ body{
 
 }
 .navbar-brand h1{
-  color      : #777;
+  color      : #efefef;
   font-size  : 2em;
-  line-height: 0;
+  line-height: 0.2;
   font-weight: 300;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -51,13 +87,14 @@ body{
   margin-top: 15px;
 }
 #nav-list a{
-  color: #9d9d9d;
+  color: #efefef;
   text-align: center;
   font-size : 1.1em;
   /*border    : 0px solid #b9b9b9;*/
 }
 #nav-list a:hover{
-  color           : #ffc33d;
+  /*color           : #ffc33d;*/
+  color: #49bbff;
   border-radius   : 30px;
 }
 #nav-list a:visited{
@@ -71,18 +108,19 @@ body{
   clear     : both;
   margin-top: -30px;
 }
+
+
 /*----------------------.section-footer--------------------*/
 #section-footer{
   height          : 300px;
-  background-color: #b9b9b9;
-  background-color: rgba(34, 34, 34, 1);
+  background-color: #328292;
 }
 #section-footer h2{
-  color     : #777;
+  color     : #efefef;
   margin-top: 4em;
 }
 #section-footer{
-  border-top: 1px solid #000;
+  /*border-top: 1px solid #000;*/
 }
 /*----------------------TOP NAVIGATION BUTTON--------------------*/
 #top-button.affix-top {
@@ -94,6 +132,9 @@ body{
   position: fixed; /* keeps it on the bottom once in view */
   bottom: -60px; /* height of link element */
   right: 10px; /* padding from the left side of the window */
+}
+#top-button{
+  z-index: 3;
 }
 #top-button a{
   margin-right: 10px;
@@ -107,26 +148,16 @@ body{
 .btn-translate{
   transform: translateY(-100px);
 }
-/*-------------END TOP NAVIGATION BUTTON-------------*/
+/*----END TOP NAVIGATION BUTTON----*/
 
-/***************************************/
 
-/*#nav-list li:nth-child(1) a:hover {
-  background: #ffc33d;
-}
-#nav-list li:nth-child(2) a:hover  {
-  background: #49bbff;
-}
-#nav-list li:nth-child(3) a:hover{
-  background: #5460cc;
-}*/
 
 /*----------------------.sec-banner--------------------*/
 #sec-banner{
   margin-bottom  : 0;
   height         : 210px;
   background     : url('../imgs/panoramic-banner.jpg') no-repeat center;
-  background-position: 0 -90px;
+  background-position: 0 -85px;
   background-size: cover;
   clear: both;
   margin-top: 0px;
@@ -134,44 +165,20 @@ body{
   border-radius: 2px;
 }
 
-/********************************************************************/
 
 /*----------------------#main-section--------------------*/
-/*.card-hover{
-  transform: scale(1.01, 1.01);
-}*/
-.card-transition{
-  transition: all .15s ease-in .01s;
-}
-
-.margin-botton30{
-  margin-bottom: 30px;
-}
-.card-conf{
-  background-color: #b9b9b9;
-}
-.row-m0{
-  margin: 0;
-}
-
 #main-section{
   margin-bottom: 50px;
   border: 0;
   border-radius: 2px;
 }
-.mdl-card{
-  width: 100%;
-}
-.mdl-card__supporting-text{
-  font-size: 2rem;
-  line-height: 24px;
-}
+
 /*----------------------#section-phi--------------------*/
-#section-phi-parent{
-  background-color: #fff;
+#section-phi-row{
+  border-radius: 4px;
 }
 #section-phi{
-  height: 480px;
+  height: 500px;
   border-radius: 2px;
   padding: 0;
 }
@@ -182,7 +189,7 @@ body{
   background-color: #fff;
 }
 #section-phi button:hover{
-  background-color: #90DEC8;
+  background-color: #c6e5eb;
 
 }
 #section-phi button>a:hover{
@@ -191,12 +198,44 @@ body{
 #section-phi button a{
   color: rgba(0,0,0,.54);
   font-weight: bold;
-
 }
-/*----------------------#section-skies--------------------*/
+#section-phi iframe{
+  border-radius: 4px 4px 0 0;
+}
+/*------------------#section-skies--------------------*/
+#section-skies-row{
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
 #section-skies{
-  height: 300px;
+  padding: 0;
+  height: 500px;
   border-radius: 2px;
+}
+#section-skies h2{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 2;
+  color: rgba(0,0,0,.60);
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 15px 15px 0 0;
+}
+#section-skies figure{
+  height: 315px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+}
+#section-skies figure img{
+ width: 100%;
+ height: 100%;
+ z-index: 1;
+ background: transparent;
 }
 
 /********************************************************************/
@@ -213,9 +252,6 @@ body{
   border-radius: 2px;
 }
 /*----------------------#section-ext--------------------*/
-#section--ext{
-  margin-top: -180px;
-}
 #section-ext{
   height: 600px;
   border-radius: 2px;
@@ -223,18 +259,6 @@ body{
 
 
 /****************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*----------------------MEDIA QUERIS--------------------*/
@@ -253,14 +277,14 @@ body{
 /*----------------------MEDIUM DEVICES--------------------*/
 @media (min-width: 992px) and (max-width: 1199px) {
   #sec-banner{
-    background-position: 0 -40px;
+    background-position: 0 -31px;
   }
 }
 /*----------------------SMALL DEVICES--------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
   #sec-banner{
-    height: 190px;
-    background-position: 0 0;
+    height: 185px;
+    background-position: 0 -1px;
   }
 }
 /*----------------------EXTRA SMALL DEVICES--------------------*/
@@ -300,14 +324,14 @@ body{
   }
 
   #sec-banner{
-    height: 190px;
+    height: 185px;
     background-position: 0 0;
   }
 
   #section--ext{
     margin-top: 0;
   }
-  #section-phi-parent, #section-contact-parent {
+  #section-phi-row, #section-contact-row {
     margin-bottom: 30px;
   }
 
@@ -326,3 +350,17 @@ body{
 
 
 }
+
+
+
+/***************************************/
+
+/*#nav-list li:nth-child(1) a:hover {
+  background: #ffc33d;
+}
+#nav-list li:nth-child(2) a:hover  {
+  background: #49bbff;
+}
+#nav-list li:nth-child(3) a:hover{
+  background: #5460cc;
+}*/
