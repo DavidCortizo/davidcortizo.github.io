@@ -18,12 +18,13 @@ $(document).ready(function (){
 //
 });
 
-function cardHoverIn(element){
-  $(element).addClass("mdl-shadow--8dp card-hover");
-}
-function cardHoverOut(element){
-  $(element).removeClass("mdl-shadow--8dp card-hover");
-}
+// function cardHoverIn(element){
+//   $(element).addClass("card-shadow-3 card-hover");
+// }
+// function cardHoverOut(element){
+//   $(element).removeClass("card-shadow-3 card-hover");
+// }
+// onmouseover="cardHoverIn(this);" onmouseleave="cardHoverOut(this);"
 
 
 //   $("#section-phi").mouseover(function(){
