@@ -1,0 +1,74 @@
+nav.navbar {
+  margin: 0;
+  height: 65px;
+  font-family: 'Dosis', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  background-color: $whitef7;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #464646; }
+
+a.navbar-brand, a.navbar-brand img {
+  display: inline-block;
+  padding: 0; }
+
+a.navbar-brand {
+  margin: 7px 0;
+  padding-left: 15px; }
+
+.navbar-brand img:first-child {
+  width: 3.5rem;
+  margin: 11px 8px 0 0; }
+
+.navbar-brand img:last-child {
+  width: 15rem; }
+
+.nav-ul {
+  margin: 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 19px -15px 19px 0; }
+
+.nav-ul li a {
+  padding: 0; }
+
+.hr-vertical {
+  display: inline-block;
+  float: left;
+  line-height: 1.2;
+  color: $gray;
+  margin: 0 15px; }
+
+.active {
+  border-bottom: 2px solid $orange; }
+
+.nav-button::after {
+  content: "";
+  display: block;
+  height: 0px;
+  background: transparent;
+  border-bottom: 2px solid $whitef7;
+  transition: width 0.5s ease, border-bottom 0.5s ease; }
+
+.navbar-collapse ul.nav-ul li a.nav-button:hover, .navbar-collapse ul.nav-ul li a.nav-button:focus {
+  color: $gray; }
+
+.nav-button:hover::after {
+  width: 100%;
+  border-bottom: 2px solid $orange; }
+
+.nav-ul i {
+  display: inline-block;
+  font-size: 1.3rem;
+  transition: all 1s ease; }
+
+.home-icon {
+  border: 2px solid $gray;
+  border-radius: 50px;
+  margin-top: -2px;
+  height: 25px;
+  transition: all 1s ease; }
+
+.home-icon:hover, .home-icon:hover i {
+  color: $orange;
+  border-color: $orange; }
