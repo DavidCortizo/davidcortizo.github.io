@@ -1,0 +1,36 @@
+.navbar
+  background-color: $primary-color !important
+  padding-top: 0
+  padding-bottom: 0
+  .container
+    .navbar-toggler
+      cursor: pointer
+      outline: 0
+      border-color: $divider-color
+      span
+        color: $divider-color
+    .navbar-brand
+      font-size: 1.5rem
+      position: relative
+      color: $section-bg
+    .navbar-collapse
+      .nav
+        .nav-item
+          .nav-link
+            padding: 1em 1.3em
+            color: rgba($section-bg, .7)
+            &.active
+              color: $primary-color-text
+            &:hover
+              color: $primary-color-text
+              background-color: $primary-color-dark
+
+@media (max-width: 991px)
+  .navbar
+    padding-top: .5rem
+    padding-bottom: .5rem
+    .container
+      .navbar-collapse
+        .nav
+          margin-top: .5rem
+          border-top: 1px solid $divider-color

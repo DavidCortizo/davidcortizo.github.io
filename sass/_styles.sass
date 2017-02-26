@@ -1,0 +1,28 @@
+*
+  box-sizing: border-box
+::root
+  font-size: 16px
+
+// imports
+@import "tools/_variables-overwrite"
+
+html,
+body
+  margin: 0
+  padding: 0
+body
+  background-color: #fff
+  position: relative
+  color: $primary-text-color
+
+// sections
+@import "navbar/_navbar"
+@import "sections/_section-intro"
+@import "sections/_section-portfolio"
+@import "sections/_section-skills"
+@import "sections/_section-contact"
+@import "sections/_section-footer"
+
+.transform-back
+  transform: translateX(0)
+  opacity: 1

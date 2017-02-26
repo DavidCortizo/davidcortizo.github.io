@@ -1,0 +1,43 @@
+.intro-section
+  margin: 56px 0 0 0
+  background: url("../imgs/bg-intro.jpg") no-repeat center center
+  background-size: cover
+  // height: 30rem
+  height: calc(100vh - 56px)
+  // .container
+  .row-wrapper
+    padding-top: 1rem
+    padding-bottom: 1rem
+    .intro
+      padding: 2rem
+      border-radius: 4px
+      background-color: fade-out($divider-color, .1)
+      .lead
+        display: inline-block
+        word-spacing: .5rem
+        padding:  2rem 4rem
+        .h1
+          font-size: 2.5rem
+          font-weight: 500
+          margin-right: 1rem
+          border: 0
+          text-transform: none
+        span
+          border-bottom: 2px solid $accent-color
+          text-transform: uppercase
+
+.intro
+  transform: translateX(-2rem)
+  opacity: 0
+  transition: all .5s $ease .1s
+
+@media (min-widrh: 1200px)
+  .intro-section
+    height: 1380px
+@media (max-width: 991px)
+  .intro-section
+    margin: 54px 0 0
+@media (max-width: 767px)
+  .description
+    order: -1
+    margin-bottom: 30px

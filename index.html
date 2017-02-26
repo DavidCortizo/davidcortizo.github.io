@@ -1,180 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Caldera</title>
-    <link rel="icon" href="imgs/nav/calderaLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <title>David Cortizo</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Custom styles -->
+    <link href="css/app.css" rel="stylesheet">
   </head>
-  <body>
-  <!-- header -->
-    <header>
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
-              <img width="100" src="imgs/nav/calderaLogo.png" alt="Caldera Logo" class="img-responsive">
-              <img width="100" src="imgs/nav/calderaImagery.png" alt="Caldera Imagery Logo" class="img-responsive">
-            </a>
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" id="btn-navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
+  <body data-spy="scroll">
 
-          <!--#navlist-->
-          <div class="collapse navbar-collapse" id="collapsable-nav">
-            <ul class="nav navbar-nav navbar-right nav-ul" id="nav-list">
-              <li><a href="photo.html" class="nav-button">photo</a></li>
-              <span class="hr-vertical">|</span>
-              <li><a href="film.html" class="nav-button">film</a></li>
-              <span class="hr-vertical">|</span>
-              <li><a href="blog.html" class="nav-button">blog</a></li>
-              <span class="hr-vertical">| |</span>
-              <li><a href="contact.html" class="nav-button">contact</a></li>
-            </ul><!--#navlist-->
-          </div><!--#collapsable-nav-->
+    <nav class="navbar navbar-toggleable-md fixed-top shadow-2" id="navbar">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">David Cortizo</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
 
-        </div>
-      </nav>
-    </header>
-
-    <!-- main -->
-    <main class="container">
-      <div class="row row-main">
-        <div class="col-md-8 left-col"><!-- left-col 8 col -->
-
-          <!-- <div class="row card card-shadow-2">
-            <div class="col-md-12"> -->
-            <div class="card ">
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h3 class="main-header">Featured / Latest</h3>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-4 main-col">
-                  <figure>
-                    <a href="photo.html"><img height="216.66"  width="165" src="imgs/webSamples/Samples_web_70Q-6.jpg" alt="Photography"></a>
-                  </figure>
-                </div>
-                <div class="col-md-8 main-col">
-                  <span class="home-card-title">Photography</span>
-                  <a href="#" class="home-card-link">Architectiral Details: Paris <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                  <p class="home-card-des">Collection of digitally by men. Overlooking the broad and scoping in on the true work, that of critical eye for detail.</p>
-                </div>
-              </div>
-
-              <hr class="hr-main">
-
-              <div class="row">
-                <div class="col-md-4 main-col">
-                  <figure>
-                    <a href="#"><img height="216.66"  width="165" src="imgs/fireSky/paris1080-4.jpg" alt="Photography"></a>
-                  </figure>
-                </div>
-                <div class="col-md-8 main-col">
-                  <span class="home-card-title">Photography</span>
-                  <a href="#" class="home-card-link">Fire Skies</a>
-                  <p class="home-card-des">Collection of digitally enables corners and intersection of timeless places built by men. Overlooking the broad and scoping in on the true work, that of critical eye for detail.</p>
-                </div>
-              </div>
-
-              <hr class="hr-main">
-
-              <div class="row">
-                <div class="col-md-4 main-col">
-                  <figure>
-                    <a href="#"><img height="216.66"  width="165" src="imgs/video/skatingManhattan.jpg" alt="Photography"></a>
-                  </figure>
-                </div>
-                <div class="col-md-8 main-col">
-                  <span class="home-card-title">Film</span>
-                  <a href="#" class="home-card-link">Tourism through extreme sports: Skating Manhattan</a>
-                  <p class="home-card-des">Collection of digitally enables corners and intersection of timeless places built by men. Overlooking the broad and scoping in on the true work, that of critical eye for detail.</p>
-                </div>
-              </div>
-
-            <!-- </div>
-          </div> -->
-          </div>
-        </div><!-- end left-col 8 col -->
-
-        <aside class="col-md-4"><!-- 4 col -->
-          <div class="row">
-
-          </div>
-        </aside> <!-- end 4 col -->
-
-      </div>
-    </main>
-
-
-
-
-
-
-    <footer class="container-fluid">
-      <div class="row footer footer-row-icon">
-        <div class="col-md-12 text-center footer-socialmedia">
-          <span>Follow me on social media!</span>
-        </div>
-        <div class="col-md-2 col-md-offset-5">
-          <span class="footer-socialmedia-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span>
+          <ul class="navbar-nav ml-auto nav">
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="#contact">About/Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="#introSection">Top</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
 
-      <div class="row text-center copy-right">
-        <div class="col-md-12 text-center">
-            <i class="fa fa-copyright" aria-hidden="true"></i>
-            2016 Andres Caldera - All Rights Reserved.
+    <!-- body -->
+    <section class="intro-section d-flex align-items-center" id="introSection">
+      <div class="container">
+        <div class="row row-wrapper d-flex align-items-center">
+          <div class="col-12 col-md-8 offset-md-2 intro">
+            <p class="lead"><span class="h1">Hi,</span>I'm David, a Web Developer. This is my Website. Take a look around. </p>
+          </div>
         </div>
       </div>
+    </section>
 
+    <section id="portfolio" class="section-portfolio">
+      <div class="container section-content">
+        <div class="row d-flex align-items-center pad-top-4 pad-bot-4">
+          <div class="col-md-6 site-img">
+            <div class="card shadow-1">
+              <img class="card-img-top img-fluid" src="imgs\caldera_media-4.jpg" alt="Caldera Media Webpage">
+              <div class="card-block">
+                <h4 class="card-title">Caldera Media</h4>
+                <p class="card-text">Portfolio Page of a Visual Editor based in Paris. Built to accomodate different screen sizes to display media content. <br>
+                Coded using Bootstrap 3, with justified image gallery and lightbox modal.</p>
+                <a href="https://andrescaldera.github.io/" class="btn btn-primary" target="_blank">Go to Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 description d-flex justify-content-center">
+            <div class="">
+              <h3 class="">Portfolio</h3>
+              <p class="lead">A collection of Websites I've worked on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-skills">
+      <div class="container section-content">
+        <div class="row d-flex align-items-center pad-top-4 pad-bot-4">
+          <div class="col-md-12 col-lg-5 text text-center">
+            <div class="content-description">
+              <h3>Skills</h3>
+              <p class="">
+                I try to stay updated with latest advances in Web Development.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-7 text-center">
+            <div class="row skills-tiles">
+
+              <div class="col-md-6 col-lg-4 html">
+                <div class="card shadow-1">
+                  <div class="card-block text-center">
+                    <i class="fa fa-html5" aria-hidden="true"></i>
+                    <h4 class="card-title">HTML5</h4>
+                    <p class="card-text">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 css">
+                <div class="card shadow-1">
+                  <div class="card-block text-center">
+                    <i class="fa fa-css3" aria-hidden="true"></i>
+                    <h4 class="card-title">CSS3</h4>
+                    <p class="card-text">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 js">
+                <div class="card shadow-1">
+                  <div class="card-block">
+                    <h2 class="card-title">JavaScript <br> &amp; <br> JQuery </h2>
+                    <p class="card-text">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 sass">
+                <div class="card shadow-1">
+                  <div class="card-block text-center">
+                    <img src="imgs\193px-Sass_Logo_Color.svg.png" alt="sass logo" class="img-fluid">
+                    <h4 class="card-title">SCSS, Sass</h4>
+                    <p class="card-text">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 git">
+                <div class="card shadow-1">
+                  <div class="card-block text-center">
+                    <i class="fa fa-github-alt" aria-hidden="true"></i>
+                    <h4 class="card-title">Git</h4>
+                    <p class="card-text">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-contact" id="contact">
+      <div class="container section-content">
+        <div class="row d-flex pad-top-4 pad-bot-4">
+          <div class="col-md-12 col-lg-6">
+            <div class="row pictures-contact d-flex align-items-center">
+              <div class="col-6 d-flex justify-content-end">
+                <figure class="figure figure-1">
+                  <img src="imgs\david_lentes.JPG" alt="Image of my glasses" class="figure-img img-fluid rounded shadow-1">
+                </figure>
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                <figure class="figure figure-2">
+                  <img src="imgs\david_comiendo.JPG" alt="Sitting in the Museum" class="figure-img img-fluid rounded shadow-1">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 order-first">
+            <div class="content-description">
+              <h3>About Me</h3>
+              <p class="text-justify"> After becoming a Telecommunication Engineer, I started exploring different paths of expertise related to my career.
+              It was one year ago, when I found out what really moves my floor. I started learning about how to build websites. Web Development is now my passion.
+              I'm an active learner and dedicate now my days as a freelancer to become a better front-end developer, and be always up-to-date with new mobile and web
+              technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row pad-bot-4">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="card shadow-1">
+              <img class="card-img-top img-fluid" src="imgs\david_polonia-1.JPG" alt="Me in Poland">
+              <div class="card-block">
+                <h4 class="card-title">Contact</h4>
+                <p class="card-text">I'm available for any project and I'm enthusiastic about challenging my habilities.
+                </p>
+                <hr>
+                <div class="card-text">
+                  Email: <a href="mailto:cortizo7269@gmial.com" target="_blank">cortizo7269@gmail.com</a>
+                </div>
+                <hr>
+                <div class="card-tex social-icons">
+                  <a href=""><i class="fa fa-github-alt" aria-hidden="true"></i>
+                  </a>
+                  <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 d-flex justify-content-center">
+            <p class="pad-top-2 pad-bot-2 mg-0">&copy; David Cortizo 2017.</p>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-start">
+            <p class="pad-top-2 pad-bot-2 mg-0">Coded using Bootstrap 4 Alpha 6 and its flexbox features.</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
 
 
+    <!-- Bootstrap -->
 
-
-
-
-
-
-
-    <!--***************** JavaScript ****************-->
-    <!-- jquery -->
-    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-
-    <!-- bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <!-- fontawesome -->
     <script src="https://use.fontawesome.com/76e0168547.js"></script>
 
-    <!-- script -->
-    <script src="js/script.js"></script>
-
+    <script type="text/javascript" src="js/script.js">
+    </script>
   </body>
 </html>
