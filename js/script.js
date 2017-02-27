@@ -21,7 +21,8 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top - 56
       }, 400, function(){
-        window.location.hash = hash;
+        // window.location.hash = hash;
+        window.location.hash = '#!' + hash;
       });
     }
   });
