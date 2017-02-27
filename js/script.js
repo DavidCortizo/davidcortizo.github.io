@@ -18,37 +18,43 @@ $(document).ready(function(){
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top -56
+        scrollTop: $(hash).offset().top - 56
       }, 400, function(){
         window.location.hash = hash;
       });
     }
   });
 
-  $(".intro-section .intro").addClass("transform-back");
+  $(".intro-section .intro").addClass("transform-back-x");
 
 
   $window.scroll(function(){
     var wScroll = $(this).scrollTop();
 
+    if (wScroll >= 450) {
+      $(".top-button").addClass("transform-back-y");
+    } else if (wScroll < 450) {
+      $(".top-button").removeClass("transform-back-y");
+    }
+
     if (wScroll >= $portfolio.offset().top - ($window.height() / 1.6)) {
-      $(".section-portfolio .card").addClass("transform-back");
-      $(".section-portfolio .description").addClass("transform-back");
+      $(".section-portfolio .card").addClass("transform-back-x");
+      $(".section-portfolio .description").addClass("transform-back-x");
     }
 
     if (wScroll >= $skills.offset().top - ($window.height() / 1.5)) {
       $skillCards.each(function(i){
         setTimeout(function(){
-          $skillCards.eq(i).addClass("transform-back");
+          $skillCards.eq(i).addClass("transform-back-x");
         }, 150 * (i +1));
       });
-      $(".text .content-description").addClass("transform-back");
+      $(".text .content-description").addClass("transform-back-x");
     }
 
     if (wScroll >= $contact.offset().top - ($window.height() / 1.6)) {
-      $(".pictures-contact div figure").addClass("transform-back");
-      $(".section-contact .content-description").addClass("transform-back");
-      $(".section-contact .card").addClass("transform-back");
+      $(".pictures-contact div figure").addClass("transform-back-x");
+      $(".section-contact .content-description").addClass("transform-back-x");
+      $(".section-contact .card").addClass("transform-back-x");
     }
 
   });

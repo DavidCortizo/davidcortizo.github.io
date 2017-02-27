@@ -9,9 +9,9 @@ $primary-color-dark:   #00796B
 $primary-color:        #009688
 $primary-color-light:  #B2DFDB
 $primary-color-text:   #FFFFFF
-// $accent-color:         #FF5722
 $accent-color:         #c3e88d
 $accent-color-dark:    darken($accent-color, 8)
+$accent-color-2:         #FF5722
 $primary-text-color:   #212121
 $secondary-text-color: #757575
 $divider-color:        #BDBDBD
@@ -51,7 +51,7 @@ $ease : ease-in-out
 
 .content-description
   border: 2px solid $accent-color
-  padding: 3rem
+  padding: 2rem
   // width: 60%
   height: 100%
   transform: translateX(5rem)
@@ -91,3 +91,7 @@ figure
 
 .figure-img
   margin: 0
+
+@media (max-width: 991px)
+  .content-description
+    transition: all .3s $ease
