@@ -6,6 +6,7 @@ $(document).ready(function(){
   var $portfolio = $("#portfolio");
   var $skills = $("#skills");
   var $skillCards = $(".section-skills .card");
+  var $about = $("#about");
   var $contact = $("#contact");
 
   $body.scrollspy({
@@ -51,9 +52,13 @@ $(document).ready(function(){
       $(".text .content-description").addClass("transform-back-x");
     }
 
+    if (wScroll >= $about.offset().top - ($window.height() / 1.6)) {
+      $(".pictures-about div figure").addClass("transform-back-x");
+      $(".section-about .content-description").addClass("transform-back-x");
+      $(".section-about .card").addClass("transform-back-x");
+    }
+
     if (wScroll >= $contact.offset().top - ($window.height() / 1.6)) {
-      $(".pictures-contact div figure").addClass("transform-back-x");
-      $(".section-contact .content-description").addClass("transform-back-x");
       $(".section-contact .card").addClass("transform-back-x");
     }
 
