@@ -5,10 +5,12 @@
 // #FF5722
 
 // colors
+$main-color:           rgba(55, 71, 79, 1.0)
 $primary-color-dark:   #00796B
+$primary-color-dark-2:   darken($primary-color-dark, 9)
 $primary-color:        #009688
 $primary-color-light:  #B2DFDB
-$primary-color-text:   #FFFFFF
+$primary-color-text:   #fcfcfc
 $accent-color:         #c3e88d
 $accent-color-dark:    darken($accent-color, 8)
 $accent-color-2:         #FF5722
@@ -35,9 +37,12 @@ $ease : ease-in-out
 .pad-bot-2
   padding-bottom: 2rem
 
-// .section-content
-//   > .row
-//     padding: 4rem 0
+.section-portfolio, .section-about, .section-skills, .section-contact
+  background-color: $primary-color-text
+
+.lead
+  margin: 0
+  font-size: 1.15rem
 
 .card
   transform: translateX(5rem)
@@ -50,13 +55,16 @@ $ease : ease-in-out
     margin: 1.2rem 0
 
 .content-description
-  border: 2px solid $accent-color
-  padding: 2rem
-  // width: 60%
-  height: 100%
+  // padding: 0 2rem
+  width: 100%
   transform: translateX(5rem)
   opacity: 0
-  transition: all .3s $ease 1.1s
+  transition: all .3s $ease 
+  h3
+    margin-bottom: 2rem
+    padding-bottom: .2rem
+    border-bottom: 2px solid $main-color
+    // display: inline-block
 
 // shadows
 .shadow-1

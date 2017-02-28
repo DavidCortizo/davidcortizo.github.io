@@ -27,7 +27,7 @@ body
   right: 2%
   bottom: 10%
   a
-    background-color: $primary-color
+    background-color: $primary-color-dark
     color: $primary-color-text
     text-decoration: none
     width: 3.5rem
@@ -35,21 +35,23 @@ body
     display: flex
     align-items: center
     justify-content: center
+    transition: all .2s $ease
     &:hover
-      background-color: $primary-color-light
-      color: $primary-color-dark
+      background-color: $primary-color
+      color: $primary-color-text
     i
       font-size: 1.2rem
       line-height: 0
 
 // sections
 @import "navbar/_navbar"
-@import "sections/_section-intro"
-@import "sections/_section-portfolio"
-@import "sections/_section-skills"
-@import "sections/_section-about"
-@import "sections/_section-contact"
-@import "sections/_section-footer"
+@import "sections/_intro"
+@import "sections/_portfolio"
+@import "sections/_skills"
+@import "sections/_about"
+@import "sections/_contact"
+@import "sections/_divider"
+@import "footer/_footer"
 
 .transform-back-x
   transform: translateX(0)

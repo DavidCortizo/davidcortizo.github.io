@@ -1,0 +1,24 @@
+.section-contact
+  .card
+    width: 60%
+    transition: all .3s $ease .3s
+    .card-text
+      a
+        color: $primary-color
+        transition: color .2s $ease
+        &:hover
+          color: $primary-color-dark-2
+    .social-icons
+      a
+        margin-right: 2rem
+        color: $primary-color
+        transition: color .2s $ease
+        &:hover
+          color: $primary-color-dark-2
+        i
+          font-size: 1.5rem
+
+@media (max-width: 767px)
+  .section-contact
+    .card
+      width: 100%

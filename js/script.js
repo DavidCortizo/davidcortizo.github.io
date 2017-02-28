@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     if (wScroll >= $portfolio.offset().top - ($window.height() / 1.6)) {
       $(".section-portfolio .card").addClass("transform-back-x");
-      $(".section-portfolio .description").addClass("transform-back-x");
+      $(".section-portfolio .content-description").addClass("transform-back-x");
     }
 
     if (wScroll >= $skills.offset().top - ($window.height() / 1.5)) {

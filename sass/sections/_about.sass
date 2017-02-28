@@ -1,0 +1,44 @@
+.section-about
+  .content-description
+    p
+      margin: 1rem 0 0
+  .card
+    width: 60%
+    transition: all .3s $ease 2s
+    .card-text
+      a
+        color: $primary-color
+        &:hover
+          color: $accent-color
+    .social-icons
+      a
+        margin-right: 2rem
+        color: $primary-color
+        &:hover
+          color: $accent-color
+        i
+          font-size: 1.5rem
+
+.figure-img
+  // width: 90%
+.figure-1
+  transform: translateX(-4rem)
+  opacity: 0
+  transition: all .5s $ease .3s
+.figure-2
+  transform: translateX(3rem)
+  opacity: 0
+  transition: all .5s $ease .6s
+
+@media (max-width: 991px)
+  .order-first
+    order: -1
+  .pictures-about
+    margin-top: 30px
+  .section-about
+    .card
+      width: 80%
+@media (max-width: 767px)
+  .section-about
+    .card
+      width: 100%
