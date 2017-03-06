@@ -4,6 +4,13 @@
   filter: opacity(1)
   .section-content
     .row
+      .text
+        display: flex
+        justify-content: center
+        margin-bottom: 30px
+        color: $primary-color-text
+        h3, .lead
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, .8)
       .card
         height: 10rem
         .card-block
@@ -36,11 +43,7 @@
       .git
         i
           color: $primary-color-light
-.text
-  display: flex
-  justify-content: center
-  margin-bottom: 30px
-  color: $primary-color-text
+
 .skills-items
     margin-bottom: 30px
     &:nth-last-child(1)
