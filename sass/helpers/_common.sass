@@ -1,0 +1,62 @@
+figure
+  margin: 0
+
+.section-portfolio, .section-about, .section-skills, .section-contact
+  background-color: $primary-color-text
+
+.lead
+  margin: 0
+  font-size: 1.15rem
+
+.card
+  transform: translateX(5rem)
+  opacity: 0
+  transition: all .3s $ease
+  border: 0
+  .card-title
+    margin: 0rem 0 1.2rem
+  .card-text
+    margin: 1.2rem 0
+
+.content-description
+  // padding: 0 2rem
+  width: 100%
+  transform: translateX(5rem)
+  opacity: 0
+  transition: all .3s $ease
+  h3
+    margin-bottom: 2rem
+    padding-bottom: .2rem
+    border-bottom: 2px solid $main-color
+    // display: inline-block
+
+
+// overwrite
+.img-fluid
+  width: 100%
+.active
+  background-color: $primary-color-dark
+
+.btn-primary
+  background-color: $primary-color
+  border: 0
+  outline: 0
+  &.active
+    color: $primary-color-text
+    border: 0
+    background-color: $accent-color
+  &:focus
+    border: 0
+    color: $primary-color-text
+    box-shadow: 0
+  &:hover
+    background-color: $primary-color-dark
+
+.figure-img
+  margin: 0
+
+
+// media queries
+@media (max-width: 991px)
+  .content-description
+    transition: all .3s $ease

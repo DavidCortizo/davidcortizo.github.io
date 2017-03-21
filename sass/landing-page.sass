@@ -1,0 +1,192 @@
+*
+  box-sizing: border-box
+  margin: 0
+  ::root
+  font-size: 16px
+$font-raleway: 'Raleway', sans-serif
+$font-arsenal: 'Arsenal', sans-serif
+// font-family   : 'Julius Sans One', sans-serif
+// font-family: 'Arsenal', sans-serif
+html,
+body
+  margin: 0
+  padding: 0
+  background-color: rgba(0, 0, 0, .8)
+  position: relative
+  height: 100vh
+  width: 100vw
+  color: #f7f7f7
+  // font-family: $font-raleway
+  font-family: 'Arsenal', sans-serif
+  overflow: hidden
+
+img
+  width: 100%
+.container
+  position: relative
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.translate-out
+  transform: translateX(400px)
+.translate-in
+  transform: translateX(0)
+.rotate
+  transform: rotateY(180deg)
+.visible
+  opacity: 1
+.hidden
+  opacity: 0
+
+// sections
+.body-background
+  filter: opacity(.6)
+  .carousel
+    .carousel-inner
+      position: absolute
+      left: 0
+      top: 0
+      width: 100vw
+      height: 100vh
+      transform: rotateY(180deg)
+      .item
+        position: absolute
+        left: 0
+        top: 0
+        width: 100vw
+        height: 100vh
+        transition: opacity .6s ease-in-out
+        &:nth-child(1)
+          background:
+            image: url("../imgs/landing-page/La_Defense_caldera_photo-6.jpg")
+            position: center center
+            size: cover
+        &:nth-child(2)
+          background:
+            image: url("../imgs/landing-page/Philharmonie_paris_caldera_photo-12.jpg")
+            position: center center
+            size: cover
+      .item,.active.left,.active.right
+        opacity: 0
+      .active, .next.left, .prev.right
+        opacity: 1
+      .next, .prev, .active.left, .active.right
+        left: 0
+        transform: translate3d(0, 0, 0)
+
+.body-wrapper
+  width: 100%
+  height: 100%
+  padding: 2rem
+  .outline
+    width: 100%
+    height: 100%
+    border: 2px solid #f7f7f7
+    display: flex
+    align-items: center
+
+
+.intro
+  display: flex
+  width: 100%
+  transition: all .2s ease-in-out
+  margin-top: 3rem
+  .content
+    display: flex
+    width: 100%
+    justify-content: flex-end
+    flex-direction: column
+    .title-wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .logo-wrapper
+        display: flex
+        justify-content: space-around
+        width: 25%
+        cursor: pointer
+        &:hover
+          i
+            color: rgba(121, 27, 42, 0.69)
+          figure
+            filter: grayscale(0)
+        i
+          font-size: 3rem
+          color: rgba(255, 255, 255, .5)
+          // cursor: pointer
+          transition: all .2s ease-in-out
+        figure
+          width: 55%
+          filter: grayscale(1)
+          transition: all .2s ease-in-out
+      .title
+        width: 75%
+        display: flex
+        justify-content: flex-start
+        margin: 0 0 0 0
+        // opacity: 0
+        transition: all .4s ease-in-out
+        span
+          // font-family: $font-arsenal
+          font-family: 'Julius Sans One', sans-serif
+          font-size: 3.5rem
+          &::first-letter
+            font-size: 170%
+    .description-wrapper
+      align-self: flex-end
+      width: 75%
+      // opacity: 0
+      transition: all .4s ease-in-out
+      p
+        margin: 0
+        text-align: justify
+      .social
+        // margin-top: 1rem
+        a
+          text-decoration: none
+          color: inherit
+          font-size: 2.2rem
+          margin-right: 2.2rem
+          &:hover
+            i
+              color: rgba(121, 27, 42, 0.69)
+
+
+.nav
+  margin: 5.5rem 0 0 0
+  transition: all .2s ease-in-out
+  .nav-col
+    display: flex
+    justify-content: center
+    ul
+      display: flex
+      list-style-type: none
+      // width: 50%
+      justify-content: space-between
+      margin: 0
+      box-shadow: 0 6px 10px 0 rgba(0,0,0,0.5), 0 1px 18px 0 rgba(0,0,0,0.8), 0 3px 5px -1px rgba(0,0,0,0.6)
+      padding: .9rem 2rem .8rem
+      background-color: rgba(#000, .3)
+      border-radius: 4px
+      transition: all .2s ease-in-out
+      li
+        a
+          text-decoration: none
+          color: inherit
+          font-size: 16px
+          padding: 1rem
+          &:hover
+            background-color: rgba(121, 27, 42, 0.69)
+
+
+.footer
+  position: absolute
+  left: 0
+  bottom: 0
+  span
+    font-size: 1.3rem
+
+
+// @media (max-width: 480px)

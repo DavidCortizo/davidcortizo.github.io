@@ -4,14 +4,16 @@
   font-size: 16px
 
 // imports
-@import "tools/_variables-overwrite"
+@import "helpers/_variables"
+@import "helpers/_common"
+@import "helpers/_classes"
 
 html,
 body
   margin: 0
   padding: 0
 body
-  background-color: #fff
+  background-color: #f7f7f7
   position: relative
   color: $primary-text-color
   overflow-x: hidden
@@ -44,14 +46,14 @@ body
       line-height: 0
 
 // sections
-@import "navbar/_navbar"
+@import "layout/_navbar"
+@import "layout/_footer"
 @import "sections/_intro"
 @import "sections/_portfolio"
 @import "sections/_skills"
 @import "sections/_about"
 @import "sections/_contact"
 @import "sections/_divider"
-@import "footer/_footer"
 
 .transform-back-x
   transform: translateX(0)
