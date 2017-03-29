@@ -1,40 +1,35 @@
 *
   box-sizing: border-box
   margin: 0
-  ::root
-  font-size: 16px
+::root
+  font-size: 16px !important
+
 $font-raleway: 'Raleway', sans-serif
 $font-arsenal: 'Arsenal', sans-serif
-// font-family   : 'Julius Sans One', sans-serif
+$font-julius: 'Julius Sans One', sans-serif
 // font-family: 'Arsenal', sans-serif
 html,
 body
   margin: 0
   padding: 0
-  background-color: rgba(0, 0, 0, .8)
   position: relative
-  height: 100vh
+  min-height: 100vh
   width: 100vw
   color: #f7f7f7
+  background-color: rgba(#000, .1)
   // font-family: $font-raleway
   font-family: 'Arsenal', sans-serif
-  overflow: hidden
+  overflow-x: hidden
+  display: flex
+  flex-direction: column
 
 img
   width: 100%
-.container
-  position: relative
-  height: 100%
-  display: flex
-  flex-direction: column
-  justify-content: center
 
-.translate-out
-  transform: translateX(400px)
-.translate-in
-  transform: translateX(0)
 .rotate
   transform: rotateY(180deg)
+.rotate-reverse
+  transform: rotateY(-180deg)
 .visible
   opacity: 1
 .hidden
@@ -42,7 +37,8 @@ img
 
 // sections
 .body-background
-  filter: opacity(.6)
+  // filter: opacity(1)
+  z-index: -3
   .carousel
     .carousel-inner
       position: absolute
@@ -76,117 +72,173 @@ img
         left: 0
         transform: translate3d(0, 0, 0)
 
+// body
 .body-wrapper
   width: 100%
-  height: 100%
-  padding: 2rem
-  .outline
-    width: 100%
-    height: 100%
-    border: 2px solid #f7f7f7
-    display: flex
-    align-items: center
-
-
-.intro
+  min-height: 100vh
+  padding: 20px
   display: flex
-  width: 100%
-  transition: all .2s ease-in-out
-  margin-top: 3rem
-  .content
+  flex-direction: column
+
+.nav-bar
+  background-color: rgba(#000, .55)
+  margin: 0 -35px
+  padding: 0 35px
+  .header
     display: flex
-    width: 100%
-    justify-content: flex-end
-    flex-direction: column
-    .title-wrapper
-      display: flex
-      justify-content: space-between
-      align-items: center
-      .logo-wrapper
-        display: flex
-        justify-content: space-around
-        width: 25%
-        cursor: pointer
-        &:hover
-          i
-            color: rgba(121, 27, 42, 0.69)
-          figure
-            filter: grayscale(0)
-        i
-          font-size: 3rem
-          color: rgba(255, 255, 255, .5)
-          // cursor: pointer
-          transition: all .2s ease-in-out
-        figure
-          width: 55%
-          filter: grayscale(1)
-          transition: all .2s ease-in-out
-      .title
-        width: 75%
-        display: flex
-        justify-content: flex-start
-        margin: 0 0 0 0
-        // opacity: 0
-        transition: all .4s ease-in-out
-        span
-          // font-family: $font-arsenal
-          font-family: 'Julius Sans One', sans-serif
-          font-size: 3.5rem
-          &::first-letter
-            font-size: 170%
-    .description-wrapper
-      align-self: flex-end
-      width: 75%
-      // opacity: 0
-      transition: all .4s ease-in-out
-      p
-        margin: 0
-        text-align: justify
-      .social
-        // margin-top: 1rem
-        a
-          text-decoration: none
-          color: inherit
-          font-size: 2.2rem
-          margin-right: 2.2rem
-          &:hover
-            i
-              color: rgba(121, 27, 42, 0.69)
-
-
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .logo
+      width: 7rem
+      margin: 1rem 0
+      filter: opacity(.6)
+      transition: filter .2s ease-in-out
+      margin-right: auto
+      &:hover
+        filter: opacity(1)
+      a
+        width: 100%
+.nav-and-social
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 59vw
+  margin-left: auto
 .nav
-  margin: 5.5rem 0 0 0
   transition: all .2s ease-in-out
-  .nav-col
+  display: flex
+  justify-content: center
+  ul
+    display: flex
+    list-style-type: none
+    justify-content: space-between
+    margin: 0
+    padding: .9rem 2rem .8rem
+    // background-color: rgba(#000, .75)
+    // box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+    // box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3)
+    border-radius: 4px
+    transition: all .2s ease-in-out
+    li
+      a
+        text-decoration: none
+        color: inherit
+        font-size: 16px
+        padding: 1rem
+        &:hover
+          background-color: rgba(121, 27, 42, 0.69)
+.social
+  a
+    text-decoration: none
+    color: inherit
+    font-size: 2.2rem
+    margin-right: 2.2rem
+    &:last-child
+      margin-right: 0
+    &:hover
+      i
+        color: rgba(121, 27, 42, 0.69)
+
+.content-wrapper
+  flex-grow: 1
+
+.about
+  margin-top: 2rem
+.wrapper
+  display: flex
+  // width: 100%
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  height: 180px
+  perspective: 1000px
+
+  .info-icon
     display: flex
     justify-content: center
-    ul
-      display: flex
-      list-style-type: none
-      // width: 50%
-      justify-content: space-between
-      margin: 0
-      box-shadow: 0 6px 10px 0 rgba(0,0,0,0.5), 0 1px 18px 0 rgba(0,0,0,0.8), 0 3px 5px -1px rgba(0,0,0,0.6)
-      padding: .9rem 2rem .8rem
-      background-color: rgba(#000, .3)
-      border-radius: 4px
+    align-items: center
+    cursor: pointer
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: #791b2a
+    width: 100%
+    height: 100%
+    backface-visibility: hidden
+    transition: all .4s ease-in-out
+    &:hover
+      i
+        color: rgba(121, 27, 42, 0.69)
+    i
+      font-size: 3.5rem
+      color: rgba(255, 255, 255, .8)
+      color: rgba(114, 175, 91, 1)
+      // cursor: pointer
       transition: all .2s ease-in-out
-      li
-        a
-          text-decoration: none
-          color: inherit
-          font-size: 16px
-          padding: 1rem
-          &:hover
-            background-color: rgba(121, 27, 42, 0.69)
+
+  .description-wrapper
+    align-self: center
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    backface-visibility: hidden
+    cursor: pointer
+    transition: all .4s ease-in-out
+    .title
+      margin: 0 0 0 0
+      // opacity: 0
+      span
+        // font-family: $font-arsenal
+        font-family: 'Julius Sans One', sans-serif
+        font-size: 3.5rem
+        &::first-letter
+          font-size: 170%
+    p
+      margin: 0
+      text-align: justify
 
 
 .footer
-  position: absolute
-  left: 0
-  bottom: 0
   span
     font-size: 1.3rem
 
-
-// @media (max-width: 480px)
+@media (min-width: 1367px)
+  .body-wrapper
+    width: 1292px
+    align-self: center
+  .nav-and-social
+    width: 61%
+@media (max-width: 991px)
+  .nav-and-social
+    width: 61vw
+@media (min-width: 768px)
+  .container
+    width: 100%
+@media (max-width: 767px)
+  .nav-bar
+    align-items: flex-start
+    .logo
+      width: 9vw
+  .nav-and-social
+    flex-direction: column
+    margin-right: auto
+    margin-left: auto
+    padding-top: 1rem
+    align-items: center
+    justify-content: center
+  .nav
+    margin-bottom: 1rem
+    ul
+      li
+        a
+          font-size: 1.8rem
+  .social
+    a
+      font-size: 2.7rem
