@@ -1,0 +1,63 @@
+.body-wrapper
+  background-color: pink
+  display: flex
+  flex-direction: row
+  min-height: 100vh
+
+.nav-wrapper
+  background: $menu-background
+  flex: 1 1 auto
+  min-width: 300px
+  padding: 20rem 0
+  color: $main-font-color
+  display: flex
+  justify-content: center
+  font-size: 1.6rem
+  span
+    color: $menu-font-color
+
+.content-wrapper
+  padding: 2rem
+  background-color: lightblue
+  min-width: calc(100vw - 300px)
+  min-height: 100vh
+  display: grid
+  grid-template-columns: repeat(2, 1fr) 0rem 1fr
+  grid-template-rows: 5rem repeat(2, 15rem) 10rem
+  grid-auto-flow: dense
+  grid-gap: 1rem
+  grid-row-gap: 2rem
+  grid-template-areas: "header header header header"         "main main . aside"                                    "main main . aside"                                   "footer footer footer footer"
+  background-color: $body-background
+
+.box
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $black
+  font-size: 1.4rem
+
+.uno
+  background-color: $orange
+  grid-column: 1 / span 3
+  grid-row: 1
+  grid-area: header
+
+.dos
+  background-color: lightgreen
+  grid-area: main
+
+.tres
+  background-color: pink
+  grid-area: aside
+
+.cuatro
+  grid-area: footer
+  background-color: lightgray
+
+
+
+
+@media (max-width: 1200px)
+  .body-wrapper
+    flex-direction: column

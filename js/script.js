@@ -14,6 +14,29 @@ $(document).ready(function(){
     offset: offsetHeight
   });
 
+  // var script = {
+    
+  //   cacheDom: function () {
+  //     $body.scrollspy({
+  //       target: '#navbar',
+  //       offset: offsetHeight
+  //     });
+  //     var $window = $(window);
+  //     var $body = $("body");
+  //     var offsetHeight = $window.height() * 0.10;
+  //     var $portfolio = $("#portfolio");
+  //     var $skills = $("#skills");
+  //     var $skillCards = $(".section-skills .card");
+  //     var $about = $("#about");
+  //     var $contact = $("#contact");
+  //   },
+
+  //   bindingEvents: function(){
+      
+  //   },
+
+  // };
+
   $(".nav-button").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
